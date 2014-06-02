@@ -1,17 +1,17 @@
 
 class Foo(object):
     def __init__(self, bar):
-        self.bar = someVar
+        self.bar = bar 
 
 import testtools
 class TestPythonAnyFunction(testtools.TestCase):
 
     def setUp(self):
         super(TestPythonAnyFunction, self).setUp()
-        self.tri1 = Triangle(1)
-        self.tri2 = Triangle(2)
-        self.tri3 = Triangle(3)
-        self.tri4 = Triangle(4)
+        self.tri1 = Foo(1)
+        self.tri2 = Foo(2)
+        self.tri3 = Foo(3)
+        self.tri4 = Foo(4)
 
         self.my_tris = [self.tri1, self.tri2, self.tri3]
 
